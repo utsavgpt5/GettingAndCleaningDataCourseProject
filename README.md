@@ -1,6 +1,6 @@
 # GettingAndCleaningDataCourseProject
 This repo contains the project related files of the course "Getting and cleaning data"
-The R script, `run_analysis.R`, does the following:
+The R script, "run_analysis.R", does the following:
 1. Download the dataset if it does not already exist in the working directory
 2. Load the activity and feature info
 3. Loads both the training and test datasets, keeping only those columns which   reflect a mean or standard deviation
