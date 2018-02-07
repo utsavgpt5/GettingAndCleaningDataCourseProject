@@ -29,4 +29,4 @@ dataForMeanAndStd <- mrg_test_train[ , mean_and_std == TRUE]
 dataWithActivityNames <- merge(dataForMeanAndStd, activityLabels,by='activityId',all.x=TRUE)                              
 TidySet <- aggregate(. ~subjectId + activityId, dataWithActivityNames, mean)
 TidySet <- TidySet[order(TidySet$subjectId, TidySet$activityId),]  
-write.table(TidySet, "tidydata.txt", row.name=FALSE)  
+write.table(TidySet, "tidy.txt", row.name=FALSE)  
